@@ -200,6 +200,10 @@
     <Compile Include="Migrations\202001071436226_addforeignkey.Designer.cs">
       <DependentUpon>202001071436226_addforeignkey.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202001071621484_AddNameToApplicationUser.cs" />
+    <Compile Include="Migrations\202001071621484_AddNameToApplicationUser.Designer.cs">
+      <DependentUpon>202001071621484_AddNameToApplicationUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -211,6 +215,7 @@
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\FutureDate.cs" />
     <Compile Include="ViewModels\GigFormViewModel.cs" />
+    <Compile Include="ViewModels\RegisterViewModel.cs" />
     <Compile Include="ViewModels\ValidTime.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -302,6 +307,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202001071436226_addforeignkey.resx">
       <DependentUpon>202001071436226_addforeignkey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202001071621484_AddNameToApplicationUser.resx">
+      <DependentUpon>202001071621484_AddNameToApplicationUser.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
