@@ -194,3 +194,14 @@ h6,
         .gigs > li:hover .actions {
             display: block;
         }
+
+        .gigs > li .actions {
+            font-size: 15px;
+            display: none;
+            padding-top:10px;
+        }
+
+        .gigs > li:hover .actions {
+            display: block;
+        }
+
