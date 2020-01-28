@@ -23,9 +23,14 @@ namespace GigHub.Models
             User = user;
         }
 
+        public void Read()
+        {
+            IsRead = true;
+        }
+
 
         [Key]
-        [Column(Order =1)]
+        [Column(Order = 1)]
         public string UserId { get; private set; }
 
         [Key]
@@ -36,6 +41,6 @@ namespace GigHub.Models
 
         public Notification Notification { get; private set; }
 
-        public bool IsRead { get; set; }        
+        public bool IsRead { get; private set; }
     }
 }
