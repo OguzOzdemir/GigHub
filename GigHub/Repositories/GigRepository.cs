@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace GigHub.Repositories
 {
-    public class GigRepository
+    public class GigRepository : IGigRepository
     {
         private readonly ApplicationDbContext _context;
 
@@ -40,6 +40,11 @@ namespace GigHub.Repositories
                .Include(x => x.Artist)
                .Include(x => x.Genre)
                .ToList();
+        }
+
+        public void Add(Gig gig)
+        {
+            _context.Gigs.Add(gig);
         }
     }
 }
